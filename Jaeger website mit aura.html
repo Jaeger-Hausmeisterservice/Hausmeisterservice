@@ -1,0 +1,346 @@
+<html lang="de" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objektbetreuung Jäger | Seit 1964</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Custom Input Styling */
+        .custom-input {
+            transition: all 0.2s ease;
+        }
+        .custom-input:focus {
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+            border-color: #059669;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-600 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-emerald-900 rounded flex items-center justify-center text-white">
+                    <span class="iconify" data-icon="lucide:shield-check" data-width="16" data-height="16"></span>
+                </div>
+                <span class="text-sm font-semibold text-slate-900 tracking-tight group-hover:text-emerald-800 transition-colors">
+                    JÄGER OBJEKTPFLEGE
+                </span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#leistungen" class="text-slate-500 hover:text-emerald-900 transition-colors">Leistungen</a>
+                <a href="#ueber-uns" class="text-slate-500 hover:text-emerald-900 transition-colors">Über uns</a>
+                <a href="#vertrauen" class="text-slate-500 hover:text-emerald-900 transition-colors">Referenzen</a>
+            </div>
+
+            <a href="#kontakt" class="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-medium text-white bg-emerald-900 rounded hover:bg-emerald-800 transition-colors tracking-wide">
+                Kontakt aufnehmen
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 md:pt-48 md:pb-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-800 text-xs font-medium">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                        Seit über 60 Jahren Ihr Partner
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-slate-900 tracking-tight leading-tight">
+                        Werte erhalten.<br>
+                        <span class="text-emerald-900 opacity-90">Ordnung schaffen.</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 leading-relaxed max-w-md font-normal">
+                        Ihr zuverlässiger Hausmeisterservice für gepflegte Immobilien und Außenanlagen. Wir sorgen für Sauberkeit, Sicherheit und Werterhalt – diskret und gründlich.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-emerald-900 rounded hover:bg-emerald-800 transition-colors w-full sm:w-auto">
+                            Anfrage senden
+                        </a>
+                        <a href="#leistungen" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-slate-600 bg-white border border-slate-200 rounded hover:bg-slate-50 hover:text-slate-900 transition-colors w-full sm:w-auto">
+                            Leistungen ansehen
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative h-96 md:h-[500px] w-full rounded-xl overflow-hidden shadow-sm border border-slate-200">
+                    <!-- Bild geändert zu Gartenpflege/Außenbereich -->
+                    <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Gepflegter grüner Garten und Rasenfläche" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="leistungen" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 md:mb-24 max-w-2xl">
+                <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 tracking-tight mb-6">Umfassende Objektbetreuung</h2>
+                <p class="text-slate-500 leading-relaxed">
+                    Wir entlasten Eigentümer und Verwalter durch strukturierte Abläufe und vorausschauende Pflege. Jede Leistung wird individuell auf Ihre Immobilie abgestimmt.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:home" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Hausmeisterservice</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Regelmäßige Kontrollgänge, Überwachung der Haustechnik und Kleinreparaturen. Wir sind das wachsame Auge für Ihre Immobilie.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:trees" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Grünanlagenpflege</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Rasenmähen, Hecken- und Baumschnitt sowie Beetpflege. Wir sorgen für ein repräsentatives Erscheinungsbild zu jeder Jahreszeit.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:shovel" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Außenanlagen</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Kehrdienst für Gehwege, Zufahrten und Hofflächen. Sauberkeit im Außenbereich ist die Visitenkarte Ihres Hauses.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:snowflake" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Winterdienst</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Zuverlässige Räumung und Streuung gemäß den örtlichen Satzungen. Damit Ihre Wege auch bei Eis und Schnee sicher bleiben.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:trash-2" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Mülltonnenservice</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Pünktliches Bereitstellen und Zurückstellen der Abfallbehälter. Wir kümmern uns um die Einhaltung der Abfuhrtermine.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group p-8 rounded-lg border border-slate-200 hover:border-emerald-200 bg-slate-50 hover:bg-emerald-50/30 transition-all duration-300">
+                    <div class="w-10 h-10 bg-white rounded border border-slate-200 flex items-center justify-center text-emerald-800 mb-6 shadow-sm">
+                        <span class="iconify" data-icon="lucide:layers" data-width="20"></span>
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 mb-3">Individuelle Leistungen</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Entrümpelungen, Urlaubsvertretung oder Sonderreinigungen. Sprechen Sie uns auf Ihre spezifischen Anforderungen an.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Trust Section -->
+    <section id="ueber-uns" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Content -->
+                <div class="space-y-8">
+                    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 tracking-tight">
+                        Verlässlichkeit, die man sieht.
+                    </h2>
+                    <div class="space-y-6 text-slate-600 leading-relaxed">
+                        <p>
+                            Jäger steht für kompromisslose Zuverlässigkeit in der Objektbetreuung. Wir verstehen uns nicht nur als Dienstleister, sondern als Partner für den Werterhalt Ihrer Immobilie. 
+                        </p>
+                        <p>
+                            Durch vorausschauende Wartung und präzise Pflege sorgen wir dafür, dass kleine Mängel gar nicht erst zu großen Problemen werden. Wir agieren nicht erst, wenn etwas defekt ist, sondern sorgen proaktiv für den einwandfreien Zustand Ihrer Liegenschaft. Ihr Anspruch an Sauberkeit und Ordnung ist unser Maßstab.
+                        </p>
+                    </div>
+
+                    <div class="pt-8 border-t border-slate-200">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <div class="text-3xl font-semibold text-emerald-900 tracking-tight">60+</div>
+                                <div class="text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Jahre Erfahrung</div>
+                            </div>
+                            <!-- Geänderter Text -->
+                            <div>
+                                <div class="text-3xl font-semibold text-emerald-900 tracking-tight">100%</div>
+                                <div class="text-xs text-slate-500 font-medium uppercase tracking-wide mt-1">Zufriedenheit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image / Visual -->
+                <div class="relative">
+                    <div class="aspect-[4/3] rounded-lg overflow-hidden border border-slate-200 shadow-sm bg-white">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Moderne Fassade und Architektur" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out">
+                    </div>
+                    <!-- Subtle Quote Card overlay -->
+                    <div id="vertrauen" class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg border border-slate-200 shadow-lg max-w-sm hidden md:block">
+                        <div class="flex gap-1 text-emerald-600 mb-3">
+                            <span class="iconify" data-icon="lucide:quote" data-width="16"></span>
+                        </div>
+                        <p class="text-sm text-slate-700 font-medium italic mb-3">
+                            „Seit vielen Jahren ein absolut zuverlässiger Partner für unsere Wohnanlage. Saubere Arbeit und klare Abläufe.“
+                        </p>
+                        <p class="text-xs text-slate-400">
+                            H. Müller, Hausverwaltung
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 tracking-tight mb-4">Lassen Sie uns sprechen</h2>
+                <p class="text-slate-500 max-w-xl mx-auto">
+                    Gerne erstellen wir Ihnen ein unverbindliches Angebot für Ihre Immobilie. 
+                    Bitte schildern Sie uns Ihr Anliegen so genau wie möglich.
+                </p>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 md:p-12">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div class="space-y-2">
+                            <label for="name" class="text-xs font-semibold text-slate-700 uppercase tracking-wide">Name / Ansprechpartner</label>
+                            <input type="text" id="name" class="custom-input w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" placeholder="Ihr Name">
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="space-y-2">
+                            <label for="email" class="text-xs font-semibold text-slate-700 uppercase tracking-wide">E-Mail Adresse</label>
+                            <input type="email" id="email" class="custom-input w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" placeholder="name@firma.de">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Object Location -->
+                        <div class="space-y-2">
+                            <label for="ort" class="text-xs font-semibold text-slate-700 uppercase tracking-wide">Ort des Objekts</label>
+                            <input type="text" id="ort" class="custom-input w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" placeholder="PLZ / Stadt">
+                        </div>
+
+                        <!-- Object Type -->
+                        <div class="space-y-2">
+                            <label for="typ" class="text-xs font-semibold text-slate-700 uppercase tracking-wide">Objektart</label>
+                            <div class="relative">
+                                <select id="typ" class="custom-input w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm text-slate-800 focus:outline-none appearance-none cursor-pointer">
+                                    <option>Wohnanlage (WEG)</option>
+                                    <option>Gewerbeimmobilie</option>
+                                    <option>Privathaus</option>
+                                    <option>Grünfläche / Grundstück</option>
+                                </select>
+                                <span class="absolute right-4 top-3 text-slate-400 pointer-events-none">
+                                    <span class="iconify" data-icon="lucide:chevron-down" data-width="14"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="space-y-2">
+                        <label for="message" class="text-xs font-semibold text-slate-700 uppercase tracking-wide">Ihr Anliegen</label>
+                        <textarea id="message" rows="5" class="custom-input w-full bg-white border border-slate-300 rounded-md px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" placeholder="Bitte beschreiben Sie kurz, welche Leistungen Sie benötigen..."></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="pt-2 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <button type="button" class="w-full md:w-auto px-8 py-3 bg-emerald-900 text-white text-sm font-medium rounded hover:bg-emerald-800 transition-colors shadow-sm flex items-center justify-center gap-2">
+                            <span class="iconify" data-icon="lucide:send" data-width="16"></span>
+                            Nachricht absenden
+                        </button>
+                        <p class="text-xs text-slate-400">
+                            Wir melden uns in der Regel innerhalb von 24h.
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Details Static -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left border-t border-slate-100 pt-12">
+                <div class="space-y-1">
+                    <h4 class="text-sm font-semibold text-slate-900">Anschrift</h4>
+                    <p class="text-sm text-slate-500">Musterstraße 42<br>12345 Musterstadt</p>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-sm font-semibold text-slate-900">Telefon</h4>
+                    <p class="text-sm text-slate-500">
+                        <a href="tel:+49123456789" class="hover:text-emerald-900 transition-colors">01234 / 56 78 90</a>
+                    </p>
+                    <p class="text-xs text-slate-400">Mo-Fr 08:00 - 17:00 Uhr</p>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-sm font-semibold text-slate-900">E-Mail</h4>
+                    <p class="text-sm text-slate-500">
+                        <a href="mailto:info@objektpflege-jaeger.de" class="hover:text-emerald-900 transition-colors">info@objektpflege-jaeger.de</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-slate-400">
+                © 2024 Jäger Objektpflege. Alle Rechte vorbehalten.
+            </div>
+            <div class="flex gap-6 text-sm font-medium text-slate-500">
+                <a href="#" class="hover:text-emerald-900 transition-colors">Impressum</a>
+                <a href="#" class="hover:text-emerald-900 transition-colors">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
